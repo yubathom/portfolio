@@ -1,0 +1,28 @@
+title: Thomas Yuba
+description: 'I’m a user interface developer, a designer who codes simple and unobtrusive interfaces.'
+about: 'Currently, I’m working at São Paulo Urbanism an urban design office. Previously worked at motebz studio.'
+projects:
+  -
+    title: 'São Urbanism’s productivity manager'
+    description: 'This application creates objective parameters for the pricing of urban intervention projects in the city of São Paulo. To this end, a personal'
+    images: 
+      - http://placehold.it/100x100
+      - http://placehold.it/250x250
+      - http://placehold.it/500x500
+      - http://placehold.it/1500x1500
+  -
+    title: 'São Paulo participatory web application'
+    description: ''
+    images: 
+      - http://placehold.it/100x100
+      - http://placehold.it/250x250
+      - http://placehold.it/500x500
+      - http://placehold.it/1500x1500
+  -
+    title: 'Geosampa extension'
+    description: ''
+    images: 
+      - http://placehold.it/100x100
+      - http://placehold.it/250x250
+      - http://placehold.it/500x500
+      - http://placehold.it/1500x1500
