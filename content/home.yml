@@ -1,28 +1,23 @@
 title: Thomas Yuba
-description: 'I’m a user interface developer, a designer who codes simple and unobtrusive interfaces.'
-about: 'Currently, I’m working at São Paulo Urbanism an urban design office. Previously worked at motebz studio.'
+description: I’m an UI developer. A designer who codes simple and unobtrusive interfaces.
+about: Currently working at São Paulo Urbanismo, an urban design office. Previously worked at motebz studio.
 projects:
   -
-    title: 'São Urbanism’s productivity manager'
-    description: 'This application creates objective parameters for the pricing of urban intervention projects in the city of São Paulo. To this end, a personal'
-    images: 
-      - http://placehold.it/100x100
-      - http://placehold.it/250x250
-      - http://placehold.it/500x500
-      - http://placehold.it/1500x1500
-  -
-    title: 'São Paulo participatory web application'
-    description: ''
-    images: 
-      - http://placehold.it/100x100
-      - http://placehold.it/250x250
-      - http://placehold.it/500x500
-      - http://placehold.it/1500x1500
-  -
-    title: 'Geosampa extension'
-    description: ''
-    images: 
-      - http://placehold.it/100x100
-      - http://placehold.it/250x250
-      - http://placehold.it/500x500
-      - http://placehold.it/1500x1500
+    title: São Paulo Urbanismo’s productivity manager
+    tags: UX/UI, fullstack
+    year: 2020
+    description: This application creates objective parameters for pricing urban projects in the city of São Paulo. Inspired by the git API, it works like a commit log for non programmers. The system was entirely written in javascript with nodejs at the backend and vuejs at the frontend
+    contextUrls: 
+      -
+        title: Project FAQ (portuguese)
+        url: https://servicos.spurbanismo.sp.gov.br/apropriacaohoras/faq/objetivos?from=%2Ffaq
+      -
+        title: Github repo
+        url: https://github.com/spurb/apropriacaohoras
+    gifs:
+      - 
+        type: smartphone
+        backgroundColor: '#008375'
+        thumb: http://placehold.it/100x100.jpg
+        source: http://localhost/yubathom.github.io/horas/horas_login.gif
+        descritption: Login flow

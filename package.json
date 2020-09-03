@@ -1,6 +1,6 @@
 {
   "name": "yubathom.github.io",
-  "description": "thomas yuba's blog",
+  "description": "thomas yuba's portfolio",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -20,17 +20,21 @@
     }
   },
   "dependencies": {
-    "@nuxt/content": "^1.5.0",
-    "@nuxtjs/pwa": "^3.0.0-beta.20",
-    "nuxt": "^2.14.0"
+    "@nuxt/content": "^1.7.1",
+    "@nuxtjs/pwa": "^3.0.2",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "nuxt": "^2.14.4"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^2.0.0",
     "babel-eslint": "^10.1.0",
+    "detab": "^2.0.3",
     "eslint": "^7.5.0",
     "eslint-plugin-nuxt": "^1.0.0",
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.11"
+    "lint-staged": "^10.2.11",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.1"
   }
 }

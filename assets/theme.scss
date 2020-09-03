@@ -1,0 +1,34 @@
+// base
+$grey-1: #5F5F5F;
+$grey-2: #6B6B6B;
+
+$desktop: 1200px;
+$tablet: 800px;
+$phone: 400px;
+
+// font definitions
+$font: 'Source Serif Pro', 'Georgia', serif;
+@mixin font-hero {
+  font-size:36px
+}
+
+@mixin font-title {
+  font-size:28px
+}
+
+// grids
+@mixin grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+}
+
+@mixin grid-col-4 {
+  @include grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@mixin grid-col-5 {
+  @include grid;
+  grid-template-columns: repeat(5, 1fr);
+}
