@@ -23,7 +23,8 @@
     "@nuxt/content": "^1.7.1",
     "@nuxtjs/pwa": "^3.0.2",
     "@nuxtjs/style-resources": "^1.0.0",
-    "nuxt": "^2.14.4"
+    "nuxt": "^2.14.4",
+    "vue-observe-visibility": "^0.4.6"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",

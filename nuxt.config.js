@@ -30,5 +30,8 @@ export default {
   modules: [
     '@nuxtjs/pwa',
     '@nuxt/content'
+  ],
+  plugins: [
+    '~/plugins/visibility-change.js'
   ]
 }

@@ -5,10 +5,9 @@
       <h3>{{ about }}</h3>
     </section>
     <section class="projects">
-      <article-project v-for="(project, index) in projects" :key="index" v-bind="project">
-        <p>aoa slot</p>
-      </article-project>
+      <section-article-project v-for="(project, index) in projects" :key="index" v-bind="project" />
     </section>
+    <section-open-source-activity />
   </div>
 </template>
 
@@ -36,7 +35,6 @@ export default {
     grid-area: 1 / 1 / 2 / 4;
   }
   h3 {
-    // @include font-title;
      grid-area: 1 / 4 / 2 / 6;
   }
 }

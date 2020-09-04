@@ -3,10 +3,11 @@ description: I’m an UI developer. A designer who codes simple and unobtrusive 
 about: Currently working at São Paulo Urbanismo, an urban design office. Previously worked at motebz studio.
 projects:
   -
+    id: case-horas
     title: São Paulo Urbanismo’s productivity manager
     tags: UX/UI, fullstack
-    year: 2020
-    description: This application creates objective parameters for pricing urban projects in the city of São Paulo. Inspired by the git API, it works like a commit log for non programmers. The system was entirely written in javascript with nodejs at the backend and vuejs at the frontend
+    year: '2020'
+    description: This application creates objective parameters for pricing urban projects in the city of São Paulo. Inspired by the git API, it works like a commit log for non programmers. The system was entirely written in javascript with nodejs at the backend and vuejs at the frontend.
     contextUrls: 
       -
         title: Project FAQ (portuguese)
@@ -14,10 +15,141 @@ projects:
       -
         title: Github repo
         url: https://github.com/spurb/apropriacaohoras
-    gifs:
+      -
+        title: Figma file
+        url: https://www.figma.com/file/UUEUzpAj0R51RLz2GzC4dW/spurb-apropria%C3%A7%C3%A3o-de-horas?node-id=0%3A1
+    smartphoneGifs:
       - 
-        type: smartphone
-        backgroundColor: '#008375'
-        thumb: http://placehold.it/100x100.jpg
+        preloaderRGB: 0,131,117
         source: http://localhost/yubathom.github.io/horas/horas_login.gif
-        descritption: Login flow
+        description: Login flow
+      - 
+        preloaderRGB: 0,131,117
+        source: http://localhost/yubathom.github.io/horas/horas_registrar.gif
+        description: Creating a log
+      - 
+        preloaderRGB: 0,131,117
+        source: http://localhost/yubathom.github.io/horas/horas_equipe.gif
+        description: Creating a team
+  -
+    id: case-participe
+    title: São Paulo participatory web application
+    tags:  UX/UI, fullstack
+    year: 2018-2020
+    description: Social participation web app of the city of São Paulo, this single page app has attended public consultations of various organizations of the municipality, including SMC (Culture), SMT (Transport), SMIT (Technology), SECOM (Communication) and SMDU (Urbanism). I contribute as maintainer of this project. This project was awarded by the IAB-SP 2019 (Brazillian Architecture Institute of São Paulo) awards at the category of  “Technology Platforms and Supports”
+    iframe:
+      src: 'https://docs.google.com/presentation/d/e/2PACX-1vRTLptapEACNdOO_OxulqB8t8m57cIU8nbIBEydG-FNF6QZ7EN9gXKRf2MyDL9bXfjxg0d8c2Atd8O5/embed?start=false&loop=false&delayms=3000'
+      width: 1045
+      height: 616
+    contextUrls:
+      -
+        title: Web app
+        url: https://participe.gestaourbana.prefeitura.sp.gov.br/
+      -
+        title: Github repo
+        url: https://github.com/spurb/participe
+      -
+        title: Medium article (portuguese)
+        url: https://medium.com/@yubathom/como-contribuir-para-melhorar-as-ferramentas-online-de-participa%C3%A7%C3%A3o-social-de-desenvolvimento-15689b113872
+      -
+        title: IAB award news (portuguese)
+        url: https://gestaourbana.prefeitura.sp.gov.br/noticias/plataforma-participe-vence-premiacao-iabsp-2019/
+    smartphoneGifs:
+      - 
+        preloaderRGB: 235,87,87
+        source: http://localhost/yubathom.github.io/participe/participe_index.gif
+        description: Public consultations index
+      - 
+        preloaderRGB: 235,87,87
+        source: http://localhost/yubathom.github.io/participe/participe_comment-box.gif
+        description: Commentable city law project
+      - 
+        preloaderRGB: 235,87,87
+        source: http://localhost/yubathom.github.io/participe/participe_commentable-map.gif
+        description: Commentable maps
+  -
+    id: case-cepac
+    title: Certificates of Additional Construction Potential dashboard
+    tags:  UX/UI, fullstack
+    year: '2020'
+    description: São Paulo city land tax called CEPACS (certificates of additional construction potential) monitoring system
+    iframe:
+      src: 'https://docs.google.com/presentation/d/e/2PACX-1vRQFcyt4Oh0iYOA5XGW4xTzIvvPj1rAWyy9Y5wgy2tH0rwbZcBHefdca_RRTlMUkorNkD6QQMn8CvdP/embed?start=false&loop=false&delayms=3000'
+      width: 1045
+      height: 616
+      description: Presentation
+    contextUrls:
+      -
+        title: Web app
+        url: servicos.spurbanismo.sp.gov.br/cepac/
+      -
+        title: Github repo
+        url: https://github.com/spurb/cepac
+      -
+        title: Figma file
+        url: https://www.figma.com/file/jugasp0Tko3UBcxyk6ZDF6/spurb-servicos.spurbanismo.sp.gov.br-cepac?node-id=0%3A1
+  -
+    id: case-piu-monitoramento
+    title: Sao Paulo city Urban Intervention Projects dashboard
+    tags:  Fullstack
+    year: '2018 - 2020'
+    description: Monitoring system and dashboard of public urban projects (Decree nº 56.901, march 2016)
+    smartphoneGifs:
+      - 
+        preloaderRGB: 255,85,0
+        source: http://localhost/yubathom.github.io/piu-monitoramento/piu-monitoramento.gif
+        description: Toggle between projects and  view associated files
+    contextUrls:
+      -
+        title: Web page
+        url: https://gestaourbana.prefeitura.sp.gov.br/piu-monitoramento/
+      -
+        title: Github repo
+        url: https://github.com/spurb/piu-monitoramento
+      -
+        title: Figma file
+        url: https://www.figma.com/file/9gOeZHlPfdFK2aAsP8g5ak/spurb-piu-monitoramento-admin-lite?node-id=0%3A1
+  -
+    id: case-geosampa-mais-livre
+    title: Geosampa extension
+    tags:  Frontend
+    year: '2019'
+    description: I contributed to this browser extension that provides to the São Paulo City city hall geographical website, Geosampa, an address search box. To achive this I’ve used the nominatin API with the Open Street Map API. It was a very small contribuition but it helped me to have an idea how extensions are made and it gave me a better understanding of how a browser works.
+    desktopGifs:
+      - 
+        preloaderRGB: 3,128,250
+        width: 1045
+        heigth: 708
+        source: http://localhost/yubathom.github.io/mais-livre/geosampa-mais-livre_usage.gif
+        description: Geosampa searchbox
+    contextUrls:
+      -
+        title: Github repo
+        url: https://github.com/geoinfo-smdu/geosampa-mais-livre
+      -
+        title: Figma file
+        url: https://www.figma.com/file/2DOLUV3UjjZrL4Wt8iopG7/geosampa-livre?node-id=0%3A1
+  -
+    id: case-hackathon-geosampa
+    title: Geosampa API proposal - MVP for hackathon
+    tags:  UI, frontend
+    year: '2019'
+    description: API proposal of the geographic data portal of the municipality of São Paulo. 2nd place in hackathon (17 teams)
+    iframe:
+      src: 'https://docs.google.com/presentation/d/e/2PACX-1vQD_KY5vBAnENeLjFaUMpb3l3ThfiMSlHD4tqubzisuVSSWCYlhfehN0x_a7JYSR_RflK8MuQUIye7G/embed?start=false&loop=false&delayms=3000'
+      width: 1045
+      height: 616
+      description: Presentation
+    contextUrls:
+      -
+        title: Github repo
+        url: https://github.com/yubathom/api-geosampa
+      -
+        title: Mock API Documentation
+        url: https://api-geosampa.herokuapp.com/
+      -
+        title: News of the event prize (portuguese)
+        url: https://gestaourbana.prefeitura.sp.gov.br/noticias/projeto-vencedor-da-hackatona-geosampa-propoe-inovacao-tecnologica-a-partir-de-construcoes-na-capital/
+      -
+        title: Figma file
+        url: https://www.figma.com/file/YdFetHdOFeKBPexdJe5euM0i/geosampa-api-Demos?node-id=0%3A1

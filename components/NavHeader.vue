@@ -7,6 +7,7 @@
       <nuxt-link to="/about" tag="a">
         about / contact
       </nuxt-link>
+      <a href="https://yubathom.github.io/cv/?lang=en">cv</a>
     </nav>
     <h1>Thomas Yuba</h1>
   </header>
