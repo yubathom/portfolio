@@ -1,11 +1,28 @@
 <template>
-  <section class="section-open-source-activity">
+  <section
+    v-observe-visibility="{
+      callback: visibilityChanged
+    }"
+    class="section-open-source-activity"
+  >
     <h2>Open source contributions</h2>
   </section>
 </template>
 <script>
+import { mapActions, mapGetters } from 'vuex'
 export default {
-  name: 'SectionOpenSourceActivity'
+  name: 'SectionOpenSourceActivity',
+  computed: {
+    ...mapGetters(['eventsReady', 'pullRequests', 'pushes', 'issues'])
+  },
+  methods: {
+    ...mapActions(['getGithubUserEvents']),
+    visibilityChanged (isVisible) {
+      if (isVisible && !this.eventsReady) {
+        this.getGithubUserEvents(this.$yubathom.get)
+      }
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>

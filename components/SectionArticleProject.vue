@@ -18,12 +18,12 @@
     >
       <ul v-if="smartphoneGifs.length" class="smartphone">
         <li v-for="(gif, gifIndex) in smartphoneGifs" :key="gifIndex">
-          <element-phone-gif-displayer v-bind="gif" />
+          <element-phone-gif-displayer v-bind="gif" :assets-base-path="assetsBasePath" />
         </li>
       </ul>
       <ul v-if="desktopGifs.length" class="desktop">
         <li v-for="(gif, deskTopgifIndex) in desktopGifs" :key="deskTopgifIndex">
-          <element-desktop-gif-displayer v-bind="gif" />
+          <element-desktop-gif-displayer v-bind="gif" :assets-base-path="assetsBasePath" />
         </li>
       </ul>
       <iframe
@@ -95,6 +95,10 @@ export default {
           width: 0
         }
       }
+    },
+    assetsBasePath: {
+      type: String,
+      required: true
     }
   },
   data () {
@@ -122,10 +126,6 @@ export default {
   row-gap: 2rem;
   opacity: 0.1;
   transition: ease-in-out 1s opacity;
-  &__title, &__info {
-    line-height: 75px;
-  }
-
   &__description, &__context-urls {
     padding-bottom: 5rem;
   }
@@ -137,6 +137,7 @@ export default {
   &__info {
     grid-area: 1 / 5 / 2 / 6;
     text-align: right;
+    line-height: 75px;
   }
   &__media{
     grid-area: 2 / 1 / 3 / 6;

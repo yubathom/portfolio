@@ -5,9 +5,14 @@
       <h3>{{ about }}</h3>
     </section>
     <section class="projects">
-      <section-article-project v-for="(project, index) in projects" :key="index" v-bind="project" />
+      <section-article-project
+        v-for="(project, index) in projects"
+        :key="index"
+        v-bind="project"
+        :assets-base-path="$assetsBasePath"
+      />
     </section>
-    <section-open-source-activity />
+    <!-- <section-open-source-activity /> -->
   </div>
 </template>
 
@@ -16,6 +21,7 @@ export default {
   name: 'Home',
   async asyncData ({ $content }) {
     const { description, about, projects } = await $content('home').fetch()
+
     return {
       description, about, projects
     }

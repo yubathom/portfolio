@@ -2,7 +2,7 @@
   <div class="element-desktop-gif-displayer">
     <img
       class="element-desktop-gif-displayer__image"
-      :src="source"
+      :src="fullSource"
     >
     <p>{{ description }}</p>
   </div>
@@ -30,6 +30,15 @@ export default {
     heigth: {
       type: Number,
       required: true
+    },
+    assetsBasePath: {
+      type: String,
+      required: true
+    }
+  },
+  computed: {
+    fullSource () {
+      return this.assetsBasePath + this.source
     }
   }
 }

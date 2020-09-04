@@ -34,7 +34,7 @@
         }"
         y="83"
         x="25"
-        :href="source"
+        :href="fullSource"
         height="507"
         width="287"
         @load="onImageLoad"
@@ -69,6 +69,10 @@ export default {
     description: {
       type: String,
       default: 'gif description'
+    },
+    assetsBasePath: {
+      type: String,
+      required: true
     }
   },
   data () {
@@ -86,6 +90,9 @@ export default {
     },
     defFill () {
       return `url(#preloader-background__${this.gifIndex})`
+    },
+    fullSource () {
+      return this.assetsBasePath + this.source
     }
   },
   methods: {

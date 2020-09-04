@@ -21,15 +21,15 @@ projects:
     smartphoneGifs:
       - 
         preloaderRGB: 0,131,117
-        source: http://localhost/yubathom.github.io/horas/horas_login.gif
+        source: /horas/horas_login.gif
         description: Login flow
       - 
         preloaderRGB: 0,131,117
-        source: http://localhost/yubathom.github.io/horas/horas_registrar.gif
+        source: /horas/horas_registrar.gif
         description: Creating a log
       - 
         preloaderRGB: 0,131,117
-        source: http://localhost/yubathom.github.io/horas/horas_equipe.gif
+        source: /horas/horas_equipe.gif
         description: Creating a team
   -
     id: case-participe
@@ -57,15 +57,15 @@ projects:
     smartphoneGifs:
       - 
         preloaderRGB: 235,87,87
-        source: http://localhost/yubathom.github.io/participe/participe_index.gif
+        source: /participe/participe_index.gif
         description: Public consultations index
       - 
         preloaderRGB: 235,87,87
-        source: http://localhost/yubathom.github.io/participe/participe_comment-box.gif
+        source: /participe/participe_comment-box.gif
         description: Commentable city law project
       - 
         preloaderRGB: 235,87,87
-        source: http://localhost/yubathom.github.io/participe/participe_commentable-map.gif
+        source: /participe/participe_commentable-map.gif
         description: Commentable maps
   -
     id: case-cepac
@@ -81,7 +81,7 @@ projects:
     contextUrls:
       -
         title: Web app
-        url: servicos.spurbanismo.sp.gov.br/cepac/
+        url: https://servicos.spurbanismo.sp.gov.br/cepac?section=oucfl
       -
         title: Github repo
         url: https://github.com/spurb/cepac
@@ -97,7 +97,7 @@ projects:
     smartphoneGifs:
       - 
         preloaderRGB: 255,85,0
-        source: http://localhost/yubathom.github.io/piu-monitoramento/piu-monitoramento.gif
+        source: /piu-monitoramento/piu-monitoramento.gif
         description: Toggle between projects and  view associated files
     contextUrls:
       -
@@ -120,7 +120,7 @@ projects:
         preloaderRGB: 3,128,250
         width: 1045
         heigth: 708
-        source: http://localhost/yubathom.github.io/mais-livre/geosampa-mais-livre_usage.gif
+        source: /mais-livre/geosampa-mais-livre_usage.gif
         description: Geosampa searchbox
     contextUrls:
       -

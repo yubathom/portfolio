@@ -13,7 +13,8 @@ $font: 'Source Serif Pro', 'Georgia', serif;
 }
 
 @mixin font-title {
-  font-size:28px
+  font-size:28px;
+  line-height: 75px;
 }
 
 // grids

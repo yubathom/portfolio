@@ -1,5 +1,11 @@
+const assetsBasePath = process.env.NODE_ENV === 'production'
+  ? 'https://yubathom.s3-sa-east-1.amazonaws.com/portfolio'
+  : 'http://localhost/yubathom.github.io'
 
 export default {
+  env: {
+    assetsBasePath
+  },
   mode: 'spa',
   target: 'static',
   head: {
@@ -29,9 +35,12 @@ export default {
   },
   modules: [
     '@nuxtjs/pwa',
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/axios'
   ],
   plugins: [
-    '~/plugins/visibility-change.js'
+    '~/plugins/visibility-change.js',
+    '~/plugins/assets-base-path.js',
+    '~/plugins/services.js'
   ]
 }
