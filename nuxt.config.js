@@ -26,7 +26,10 @@ export default {
   components: true,
   buildModules: [
     '@nuxtjs/eslint-module',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    ['@nuxtjs/google-analytics', {
+      id: ' UA-135422823-2'
+    }]
   ],
   styleResources: {
     scss: [
