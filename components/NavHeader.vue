@@ -4,10 +4,7 @@
       <nuxt-link to="/" tag="a">
         work
       </nuxt-link>
-      <nuxt-link to="/about" tag="a">
-        about / contact
-      </nuxt-link>
-      <a href="https://yubathom.github.io/cv/?lang=en">cv</a>
+      <a href="https://yubathom.github.io/cv/?lang=en">contact / cv</a>
     </nav>
     <h1>Thomas Yuba</h1>
   </header>

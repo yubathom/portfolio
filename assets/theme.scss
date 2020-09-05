@@ -2,19 +2,33 @@
 $grey-1: #5F5F5F;
 $grey-2: #6B6B6B;
 
-$desktop: 1200px;
-$tablet: 800px;
-$phone: 400px;
+$desktop: 1400px;
+$tablet: 1000px;
+$phone: 500px;
 
 // font definitions
 $font: 'Source Serif Pro', 'Georgia', serif;
 @mixin font-hero {
-  font-size:36px
+  font-size: 36px;
+  @media (max-width: $tablet) {
+    line-height: 1.2;
+    font-size: 24px;
+  }
+  @media (max-width: $phone) {
+    font-size: 21px;
+  }
 }
 
 @mixin font-title {
-  font-size:28px;
+  font-size: 28px;
   line-height: 75px;
+  @media (max-width: $tablet) {
+    line-height: 1.2;
+    font-size: 21px;
+  }
+  @media (max-width: $phone) {
+    margin-top: 1rem
+  }
 }
 
 // grids
@@ -27,11 +41,19 @@ $font: 'Source Serif Pro', 'Georgia', serif;
 @mixin grid-col-4 {
   @include grid;
   grid-template-columns: repeat(4, 1fr);
+  @media (max-width: $phone) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @mixin grid-col-5 {
   @include grid;
   grid-template-columns: repeat(5, 1fr);
+  @media (max-width: $phone) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 // transitions

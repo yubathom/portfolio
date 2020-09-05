@@ -1,8 +1,10 @@
 my portfolio
 
+[![Build Status](https://travis-ci.com/yubathom/portfolio.svg?branch=master)](https://travis-ci.com/yubathom/portfolio)
+
 ```bash
-# install dependencies
-$ yarn install
+# install
+$ yarn
 
 # serve with hot reload at localhost:3000
 $ yarn dev

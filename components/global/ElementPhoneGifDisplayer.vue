@@ -1,5 +1,10 @@
 <template>
-  <div class="element-phone-gif-displayer">
+  <div
+    class="element-phone-gif-displayer"
+    :class="{
+      'element-phone-gif-displayer--grabbing': grabbing
+    }"
+  >
     <svg
       v-observe-visibility="{
         callback: visibilityChanged
@@ -10,6 +15,12 @@
       viewBox="0 0 335 675"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      @mousedown="grab(true)"
+      @mouseleave="grab(false)"
+      @mouseup="grab(false)"
+      @touchstart="grab(true)"
+      @touchend="grab(false)"
+      @touchcancel="grab(false)"
     >
       <g clip-path="url(#clip0)">
         <path d="M169.03 23.9896C166.676 23.9896 164.793 22.1081 164.793 19.7562C164.793 17.4042 166.676 15.5227 169.03 15.5227C171.384 15.5227 173.268 17.4042 173.268 19.7562C173.268 22.1081 171.384 23.9896 169.03 23.9896ZM169.03 16.6987C167.382 16.6987 165.97 18.1098 165.97 19.7562C165.97 21.4025 167.382 22.8136 169.03 22.8136C170.678 22.8136 172.091 21.4025 172.091 19.7562C172.091 18.1098 170.678 16.6987 169.03 16.6987Z" fill="#808080" />
@@ -22,7 +33,7 @@
         <path d="M4.70835 255.653H0.706238V203.676H4.70835V255.653ZM1.88333 254.477H3.76667V204.852H1.88333V254.477Z" fill="#808080" />
         <path d="M312 591H25V82H312V591ZM25.941 589.826H310.589V83.1739H25.941V589.826V589.826Z" fill="#808080" />
         <rect :fill="defFill" x="26" y="83" width="285" height="507" />
-        <text class="preloader-message" x="130" y="310">Loading...</text>
+        <text class="element-phone-gif-displayer__preloader-message" x="130" y="310">Loading...</text>
         <path d="M280.854 667.004H55.5587C30.8398 667.004 10.5938 646.777 10.5938 622.082V52.9182C10.5938 28.2231 30.6044 7.99658 55.5587 7.99658H280.854C305.573 7.99658 325.819 28.2231 325.819 52.9182V622.082C325.819 647.012 305.573 667.004 280.854 667.004ZM55.5587 9.17254C31.3106 9.17254 11.7709 28.6935 11.7709 52.9182V622.082C11.7709 646.307 31.3106 665.828 55.5587 665.828H280.854C305.102 665.828 324.642 646.307 324.642 622.082V52.9182C324.642 28.6935 305.102 9.17254 280.854 9.17254H55.5587V9.17254Z" fill="#808080" />
         <path d="M289.564 675H48.4961C23.3064 675 2.82502 654.538 2.82502 629.373V256.359H0V203.206H3.06044V194.268H0V141.115H3.06044V112.422H0V83.493H3.06044V45.6272C3.06044 20.4617 23.5418 0 48.4961 0H289.564C314.754 0 335.235 20.4617 335.235 45.6272V629.608C335 654.538 314.519 675 289.564 675ZM2.35418 254.007H5.41462V629.608C5.41462 653.362 24.7189 672.883 48.7316 672.883H289.564C313.342 672.883 332.881 653.598 332.881 629.608V45.6272C332.646 21.6376 313.342 2.35192 289.564 2.35192H48.4961C24.7189 2.35192 5.41462 21.6376 5.41462 45.6272V86.0801H2.35418V110.07H5.41462V143.467H2.35418V191.681H5.41462V205.322H2.35418V254.007Z" fill="#808080" />
       </g>
@@ -79,7 +90,8 @@ export default {
     return {
       loaded: false,
       intersecting: false,
-      play: false
+      play: false,
+      grabbing: false
     }
   },
   computed: {
@@ -101,6 +113,9 @@ export default {
     },
     visibilityChanged (isIntersecting) {
       this.intersecting = isIntersecting
+    },
+    grab (state) {
+      this.grabbing = state
     }
   }
 }
@@ -108,6 +123,7 @@ export default {
 <style lang="scss" scoped>
 .element-phone-gif-displayer {
   margin-right: 20px;
+  margin-top: 1rem;
   &__gif {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -120,15 +136,27 @@ export default {
     text-align: center;
     font-size: small;
     padding: 0.7rem 0;
-    border-bottom: 1px solid #808080
+    border-bottom: 1px solid #808080;
+    @media(max-width: $phone) {
+      text-align: left;
+    }
+  }
+  &__preloader-message {
+    fill: white;
+    animation: pulse 2s infinite;
+    animation-direction: alternate;
+  }
+  @media (max-width: $tablet) {
+    cursor: grab;
+    &--grabbing {
+      cursor: grabbing;
+    }
+  }
+  @media(max-width: $phone) {
+    margin: 1rem 0;
   }
 }
 
-.preloader-message {
-  fill: white;
-  animation: pulse 2s infinite;
-  animation-direction: alternate;
-}
 @keyframes pulse {
   0% {
     opacity: 0.2;

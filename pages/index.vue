@@ -5,7 +5,7 @@
       <h3>{{ about }}</h3>
     </section>
     <section class="projects">
-      <section-projects
+      <section-project
         v-for="(project, index) in projects"
         :key="index"
         v-bind="project"
@@ -41,7 +41,14 @@ export default {
     grid-area: 1 / 1 / 2 / 4;
   }
   h3 {
-     grid-area: 1 / 4 / 2 / 6;
+    grid-area: 1 / 4 / 2 / 6;
+    @media (max-width: $phone) {
+      margin-top: 1.2rem
+    }
+  }
+  @media (max-width: $phone) {
+    justify-content: center;
+    align-items: center;
   }
 }
 </style>

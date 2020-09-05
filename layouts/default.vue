@@ -30,7 +30,7 @@ a {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: $desktop;
   margin: auto;
 }
 </style>

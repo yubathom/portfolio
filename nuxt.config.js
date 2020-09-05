@@ -1,6 +1,6 @@
 const assetsBasePath = process.env.NODE_ENV === 'production'
   ? 'https://yubathom.s3-sa-east-1.amazonaws.com/portfolio'
-  : 'http://localhost/yubathom.github.io'
+  : 'http://localhost/portfolio'
 
 export default {
   router: {
