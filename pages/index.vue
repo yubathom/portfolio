@@ -5,14 +5,14 @@
       <h3>{{ about }}</h3>
     </section>
     <section class="projects">
-      <section-article-project
+      <section-projects
         v-for="(project, index) in projects"
         :key="index"
         v-bind="project"
         :assets-base-path="$assetsBasePath"
       />
     </section>
-    <!-- <section-open-source-activity /> -->
+    <section-open-source />
   </div>
 </template>
 

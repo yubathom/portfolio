@@ -127,11 +127,11 @@ export default {
 .preloader-message {
   fill: white;
   animation: pulse 2s infinite;
-   animation-direction: alternate;
+  animation-direction: alternate;
 }
 @keyframes pulse {
   0% {
-    opacity: 0.4;
+    opacity: 0.2;
   }
   100% {
     opacity: 1;

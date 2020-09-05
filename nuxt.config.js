@@ -32,7 +32,8 @@ export default {
     '@nuxtjs/style-resources',
     ['@nuxtjs/google-analytics', {
       id: ' UA-135422823-2'
-    }]
+    }],
+    '@nuxtjs/moment'
   ],
   styleResources: {
     scss: [

@@ -7,27 +7,6 @@ export const state = () => ({
 export const getters = {
   eventsReady: (state) => {
     return state.events.length > 0
-  },
-  pullRequests: (state) => {
-    if (state.events.length === 0) { return [] }
-    const validEvents = [
-      'PullRequestEvent',
-      'PullRequestReviewEvent',
-      'PullRequestReviewCommentEvent'
-    ]
-    return state.events.filter(({ type }) => validEvents.includes(type))
-  },
-  pushes: (state) => {
-    if (state.events.length === 0) { return [] }
-    return state.events.filter(({ type }) => type === 'PushEvent')
-  },
-  issues: (state) => {
-    if (state.events.length === 0) { return [] }
-    const validEvents = [
-      'IssueCommentEvent',
-      'IssuesEvent'
-    ]
-    return state.events.filter(({ type }) => validEvents.includes(type))
   }
 }
 

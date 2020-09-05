@@ -33,3 +33,12 @@ $font: 'Source Serif Pro', 'Georgia', serif;
   @include grid;
   grid-template-columns: repeat(5, 1fr);
 }
+
+// transitions
+@mixin is-visible-opacity {
+  opacity: 0.1;
+  transition: ease-in-out 1s opacity;
+  &--is-visible {
+    opacity: 1;
+  }
+}

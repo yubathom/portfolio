@@ -1,20 +1,20 @@
 <template>
   <article
     :id="id"
-    class="section-article-project"
-    :class="{ 'section-article-project--is-visible': isVisible }"
+    class="section-projects"
+    :class="{ 'section-projects--is-visible': isVisible }"
   >
-    <h3 class="section-article-project__title">
+    <h3 class="section-projects__title">
       {{ title }}
     </h3>
-    <div class="section-article-project__info">
+    <div class="section-projects__info">
       <p>{{ tags }} | {{ year }} </p>
     </div>
     <div
       v-observe-visibility="{
         callback: visibilityChanged
       }"
-      class="section-article-project__media"
+      class="section-projects__media"
     >
       <ul v-if="smartphoneGifs.length" class="smartphone">
         <li v-for="(gif, gifIndex) in smartphoneGifs" :key="gifIndex">
@@ -38,10 +38,10 @@
         webkitallowfullscreen="true"
       />
     </div>
-    <p class="section-article-project__description">
+    <p class="section-projects__description">
       {{ description }}
     </p>
-    <ul class="section-article-project__context-urls">
+    <ul class="section-projects__context-urls">
       <li v-for="(contextUrl, indexUrl) in contextUrls" :key="indexUrl">
         <element-anchor :href="contextUrl.url">
           {{ contextUrl.title }}
@@ -119,13 +119,12 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.section-article-project {
+.section-projects {
   @include  grid-col-5;
+  @include is-visible-opacity;
   grid-template-rows: 75px max-content max-content;
   border-top: 1px solid white;
   row-gap: 2rem;
-  opacity: 0.1;
-  transition: ease-in-out 1s opacity;
   &__description, &__context-urls {
     padding-bottom: 5rem;
   }
@@ -153,9 +152,6 @@ export default {
     grid-area: 3 / 4 / 4 / 6;
     text-align: right;
     line-height: 2.2;
-  }
-  &--is-visible {
-    opacity: 1;
   }
 }
 </style>

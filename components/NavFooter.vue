@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
-    <a href="https://github.com/yubathom/yubathom.github.io" class="footer__ico"><icon-github /></a><p>
-      Thomas Yuba © 2020 <element-anchor href="https://github.com/yubathom/yubathom.github.io/blob/master/LICENSE">
+    <a href="https://github.com/yubathom/portfolio" class="footer__ico"><icon-github /></a><p>
+      Thomas Yuba © 2020 <element-anchor href="https://github.com/yubathom/portfolio/blob/master/LICENSE">
         License GPLv3
       </element-anchor>
     </p>
