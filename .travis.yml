@@ -3,7 +3,7 @@ node_js:
  - lts/*
 
 cache:
- npm: true
+ yarn: true
  directories:
   - node_modules
   - ~/.cache
@@ -13,10 +13,10 @@ branches:
   - master
 
 install:
- - npm install
+ - yarn
 
 script:
- - npm run generate
+ - yarn generate
 
 deploy:
   provider: pages
