@@ -22,15 +22,15 @@ projects:
       - 
         source: '/horas/registrar-horas.mp4'
         preloaderRGB: 0,131,117
-        description: Creating a log
+        description: Opening the app and create a log
       - 
         source: '/horas/equipes.mp4'
         preloaderRGB: 0,131,117
-        description: Defining teams
+        description: Define a project team
       - 
         source: '/horas/relatorios.mp4'
         preloaderRGB: 0,131,117
-        description: Creating reports
+        description: Check the a project report
   -
     id: case-participe
     title: São Paulo participatory web application
@@ -56,9 +56,21 @@ projects:
         url: https://gestaourbana.prefeitura.sp.gov.br/noticias/plataforma-participe-vence-premiacao-iabsp-2019/
     videos:
       - 
-        source: /participe/participe-mapa.mp4
+        source: /participe/participe1.mp4
         preloaderRGB: 235,87,87
-        description: Commentable maps
+        description: Open a consultancy and check the related law
+      -
+        source: /participe/participe2.mp4
+        preloaderRGB: 235,87,87
+        description: Explore maps in the consultancy context
+      -
+        source: /participe/mapa1.mp4
+        preloaderRGB: 235,87,87
+        description: Commentable maps. Toggle and combine layers
+      -
+        source: /participe/mapa2.mp4
+        preloaderRGB: 235,87,87
+        description: Commentable maps. Switching layers trough map presets
   -
     id: case-cepac
     title: Certificates of Additional Construction Potential dashboard
@@ -72,9 +84,13 @@ projects:
       description: Presentation
     videos:
       - 
-        source: '/cepac/cepac.mp4'
+        source: '/cepac/cepac1.mp4'
         preloaderRGB: 0,131,117
-        description: Consulting CEPAC and creating a pdf
+        description: Finding a CEPAC using the map
+      - 
+        source: '/cepac/cepac2.mp4'
+        preloaderRGB: 0,131,117
+        description: Finding a CEPAC using the list
     contextUrls:
       -
         title: Web app
