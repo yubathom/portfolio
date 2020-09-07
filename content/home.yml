@@ -18,19 +18,19 @@ projects:
       -
         title: Figma file
         url: https://www.figma.com/file/UUEUzpAj0R51RLz2GzC4dW/spurb-apropria%C3%A7%C3%A3o-de-horas?node-id=0%3A1
-    smartphoneGifs:
+    videos:
       - 
+        source: '/horas/registrar-horas.mp4'
         preloaderRGB: 0,131,117
-        source: /horas/horas_login.gif
-        description: Login flow
-      - 
-        preloaderRGB: 0,131,117
-        source: /horas/horas_registrar.gif
         description: Creating a log
       - 
+        source: '/horas/equipes.mp4'
         preloaderRGB: 0,131,117
-        source: /horas/horas_equipe.gif
-        description: Creating a team
+        description: Defining teams
+      - 
+        source: '/horas/relatorios.mp4'
+        preloaderRGB: 0,131,117
+        description: Creating reports
   -
     id: case-participe
     title: São Paulo participatory web application
@@ -54,18 +54,10 @@ projects:
       -
         title: IAB award news (portuguese)
         url: https://gestaourbana.prefeitura.sp.gov.br/noticias/plataforma-participe-vence-premiacao-iabsp-2019/
-    smartphoneGifs:
+    videos:
       - 
+        source: /participe/participe-mapa.mp4
         preloaderRGB: 235,87,87
-        source: /participe/participe_index.gif
-        description: Public consultations index
-      - 
-        preloaderRGB: 235,87,87
-        source: /participe/participe_comment-box.gif
-        description: Commentable city law project
-      - 
-        preloaderRGB: 235,87,87
-        source: /participe/participe_commentable-map.gif
         description: Commentable maps
   -
     id: case-cepac
@@ -78,6 +70,11 @@ projects:
       width: 1045
       height: 616
       description: Presentation
+    videos:
+      - 
+        source: '/cepac/cepac.mp4'
+        preloaderRGB: 0,131,117
+        description: Consulting CEPAC and creating a pdf
     contextUrls:
       -
         title: Web app
@@ -94,11 +91,11 @@ projects:
     tags:  Fullstack
     year: '2018 - 2020'
     description: Monitoring system and dashboard of public urban projects (Decree nº 56.901, march 2016)
-    smartphoneGifs:
+    videos:
       - 
+        source: '/piu-monitoramento/monitoramento.mp4'
         preloaderRGB: 255,85,0
-        source: /piu-monitoramento/piu-monitoramento.gif
-        description: Toggle between projects and  view associated files
+        description: Retrieving data from projects
     contextUrls:
       -
         title: Web page

@@ -16,6 +16,11 @@
       }"
       class="section-project__media"
     >
+      <ul v-if="videos.length" class="smartphone">
+        <li v-for="(video, videoIndex) in videos" :key="videoIndex">
+          <element-video v-bind="video" :assets-base-path="assetsBasePath" />
+        </li>
+      </ul>
       <ul v-if="smartphoneGifs.length" class="smartphone">
         <li v-for="(gif, gifIndex) in smartphoneGifs" :key="gifIndex">
           <element-phone-gif-displayer v-bind="gif" :assets-base-path="assetsBasePath" />
@@ -92,6 +97,10 @@ export default {
           width: 0
         }
       }
+    },
+    videos: {
+      type: Array,
+      default: () => []
     },
     assetsBasePath: {
       type: String,
