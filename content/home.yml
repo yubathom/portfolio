@@ -7,6 +7,7 @@ projects:
     title: São Paulo Urbanismo’s productivity manager
     tags: UX/UI, fullstack
     year: '2020'
+    color: 0,131,117
     description: This application creates objective parameters for pricing urban projects in the city of São Paulo. Inspired by the git API, it works like a commit log for non programmers. The system was entirely written in javascript with nodejs at the backend and vuejs at the frontend.
     contextUrls: 
       -
@@ -22,23 +23,21 @@ projects:
       - 
         source: '/horas/registrar-horas.mp4'
         poster: '/horas/registrar-horas.jpg'
-        preloaderRGB: 0,131,117
         description: Opening the app and create a log
       - 
         source: '/horas/equipes.mp4'
         poster: '/horas/equipes.jpg'
-        preloaderRGB: 0,131,117
         description: Define a project team
       - 
         source: '/horas/relatorios.mp4'
         poster: '/horas/relatorios.jpg'
-        preloaderRGB: 0,131,117
         description: Check the a project report
   -
     id: case-participe
     title: São Paulo participatory web application
     tags:  UX/UI, fullstack
     year: 2018-2020
+    color: 235,87,87
     description: Social participation web app of the city of São Paulo, this single page app has attended public consultations of various organizations of the municipality, including SMC (Culture), SMT (Transport), SMIT (Technology), SECOM (Communication) and SMDU (Urbanism). I contribute as maintainer of this project. This project was awarded by the IAB-SP 2019 (Brazillian Architecture Institute of São Paulo) awards at the category of  “Technology Platforms and Supports”
     iframe:
       src: 'https://docs.google.com/presentation/d/e/2PACX-1vRTLptapEACNdOO_OxulqB8t8m57cIU8nbIBEydG-FNF6QZ7EN9gXKRf2MyDL9bXfjxg0d8c2Atd8O5/embed?start=false&loop=false&delayms=3000'
@@ -64,28 +63,25 @@ projects:
       - 
         source: /participe/participe1.mp4
         poster: /participe/participe1.jpg
-        preloaderRGB: 235,87,87
         description: Open a consultancy and check the related law
       -
         source: /participe/participe2.mp4
         poster: /participe/participe2.jpg
-        preloaderRGB: 235,87,87
         description: Explore maps in the consultancy context
       -
         source: /participe/mapa1.mp4
         poster: /participe/mapa1.jpg
-        preloaderRGB: 235,87,87
         description: Commentable maps. Toggle and combine layers
       -
         source: /participe/mapa2.mp4
         poster: /participe/mapa2.jpg
-        preloaderRGB: 235,87,87
         description: Commentable maps. Switching layers trough map presets
   -
     id: case-cepac
     title: Certificates of Additional Construction Potential dashboard
     tags:  UX/UI, fullstack
     year: '2020'
+    color: 0,131,117
     description: São Paulo city land tax called CEPACS (certificates of additional construction potential) monitoring system
     iframe:
       src: 'https://docs.google.com/presentation/d/e/2PACX-1vRQFcyt4Oh0iYOA5XGW4xTzIvvPj1rAWyy9Y5wgy2tH0rwbZcBHefdca_RRTlMUkorNkD6QQMn8CvdP/embed?start=false&loop=false&delayms=3000'
@@ -96,12 +92,10 @@ projects:
       - 
         source: /cepac/cepac1.mp4
         poster: /cepac/cepac1.jpg
-        preloaderRGB: 0,131,117
         description: Finding a CEPAC using the map
       - 
         source: /cepac/cepac2.mp4
         poster: /cepac/cepac2.jpg
-        preloaderRGB: 0,131,117
         description: Finding a CEPAC using the list
     contextUrls:
       -
@@ -117,13 +111,13 @@ projects:
     id: case-piu-monitoramento
     title: Sao Paulo city Urban Intervention Projects dashboard
     tags:  Fullstack
-    year: '2018 - 2020'
+    year: 2018 - 2020
+    color: 255,85,0
     description: Monitoring system and dashboard of public urban projects (Decree nº 56.901, march 2016)
     videos:
       - 
         source: '/piu-monitoramento/monitoramento_1.mp4'
         poster: '/piu-monitoramento/monitoramento_1.jpg'
-        preloaderRGB: 255,85,0
         description: Retrieving data from projects
     contextUrls:
       -
@@ -140,10 +134,10 @@ projects:
     title: Geosampa extension
     tags:  Frontend
     year: '2019'
+    color: 3,128,250
     description: I contributed to this browser extension that provides to the São Paulo City city hall geographical website, Geosampa, an address search box. To achive this I’ve used the nominatin API with the Open Street Map API. It was a very small contribuition but it helped me to have an idea how extensions are made and it gave me a better understanding of how a browser works.
     desktopGifs:
       - 
-        preloaderRGB: 3,128,250
         width: 1045
         heigth: 708
         source: /mais-livre/geosampa-mais-livre_usage.gif
@@ -160,6 +154,7 @@ projects:
     title: Geosampa API proposal - MVP for hackathon
     tags:  UI, frontend
     year: '2019'
+    color: 3,128,250
     description: API proposal of the geographic data portal of the municipality of São Paulo. 2nd place in hackathon (17 teams)
     iframe:
       src: 'https://docs.google.com/presentation/d/e/2PACX-1vQD_KY5vBAnENeLjFaUMpb3l3ThfiMSlHD4tqubzisuVSSWCYlhfehN0x_a7JYSR_RflK8MuQUIye7G/embed?start=false&loop=false&delayms=3000'

@@ -18,17 +18,17 @@
     >
       <ul v-if="videos.length" class="smartphone">
         <li v-for="(video, videoIndex) in videos" :key="videoIndex">
-          <element-video v-bind="video" :assets-base-path="assetsBasePath" />
+          <element-video v-bind="video" :assets-base-path="assetsBasePath" :color="color" />
         </li>
       </ul>
       <ul v-if="smartphoneGifs.length" class="smartphone">
         <li v-for="(gif, gifIndex) in smartphoneGifs" :key="gifIndex">
-          <element-phone-gif-displayer v-bind="gif" :assets-base-path="assetsBasePath" />
+          <element-phone-gif-displayer v-bind="gif" :assets-base-path="assetsBasePath" :color="color" />
         </li>
       </ul>
       <ul v-if="desktopGifs.length" class="desktop">
         <li v-for="(gif, deskTopgifIndex) in desktopGifs" :key="deskTopgifIndex">
-          <element-desktop-gif-displayer v-bind="gif" :assets-base-path="assetsBasePath" />
+          <element-desktop-gif-displayer v-bind="gif" :assets-base-path="assetsBasePath" :color="color" />
         </li>
       </ul>
       <element-iframe
@@ -65,6 +65,10 @@ export default {
       required: true
     },
     year: {
+      type: String,
+      required: true
+    },
+    color: {
       type: String,
       required: true
     },

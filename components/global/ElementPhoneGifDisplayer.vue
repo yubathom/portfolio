@@ -55,8 +55,8 @@
           <rect width="335" height="675" fill="white" />
         </clipPath>
         <linearGradient :id="`preloader-background__${gifIndex}`" gradientTransform="rotate(90)">
-          <stop offset="30%" :stop-color="`rgba(${preloaderRGB}, 1)`" />
-          <stop offset="120%" :stop-color="`rgba(${preloaderRGB}, 0)`" />
+          <stop offset="30%" :stop-color="`rgba(${color}, 1)`" />
+          <stop offset="120%" :stop-color="`rgba(${color}, 0)`" />
         </linearGradient>
       </defs>
     </svg>
@@ -73,7 +73,7 @@ export default {
       type: String,
       required: true
     },
-    preloaderRGB: {
+    color: {
       type: String,
       default: '200, 0, 0'
     },
@@ -96,7 +96,7 @@ export default {
   },
   computed: {
     gifIndex () {
-      return this.preloaderRGB
+      return this.color
         .replace(',', '')
         .replace(' ', '')
     },

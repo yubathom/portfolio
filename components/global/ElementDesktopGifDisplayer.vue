@@ -15,7 +15,7 @@ export default {
       type: String,
       required: true
     },
-    preloaderRGB: {
+    color: {
       type: String,
       default: '200, 0, 0'
     },

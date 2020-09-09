@@ -48,7 +48,7 @@
     <p
       v-else
       key="preloader"
-      :style="`background: linear-gradient(#5F5F5F, rgb(${preloaderRGB}))`"
+      :style="`background: linear-gradient(#5F5F5F, rgb(${color}))`"
       class="element-video__video element-video__video--loading"
     >
       <span>Loading...</span>
@@ -59,7 +59,7 @@
 export default {
   name: 'ElementVideo',
   props: {
-    preloaderRGB: {
+    color: {
       type: String,
       default: '0, 0, 0'
     },
@@ -136,6 +136,7 @@ export default {
       span {
         animation: pulse 2s infinite;
         animation-direction: alternate;
+        padding: 0.1rem;
       }
     }
   }
