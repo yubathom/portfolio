@@ -38,6 +38,7 @@
         :width="iframe.width"
         :height="iframe.height"
         :inner-width="innerWidth"
+        :color="color"
       />
     </div>
     <p class="section-project__description">
