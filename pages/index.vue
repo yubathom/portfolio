@@ -1,5 +1,5 @@
 <template>
-  <div class="index">
+  <main class="index">
     <section class="main-description">
       <h2>{{ description }}</h2>
       <h3>{{ about }}</h3>
@@ -13,7 +13,7 @@
       />
     </section>
     <section-open-source />
-  </div>
+  </main>
 </template>
 
 <script>

@@ -64,3 +64,12 @@ $font: 'Source Serif Pro', 'Georgia', serif;
     opacity: 1;
   }
 }
+
+@keyframes pulse {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}

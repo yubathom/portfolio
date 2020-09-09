@@ -2,7 +2,14 @@
   <div
     class="element-video"
   >
+    <p class="element-video__description">
+      {{ description }}
+    </p>
     <svg
+      v-observe-visibility="{
+        callback: visibilityChanged,
+        once: true
+      }"
       class="element-video__frame"
       width="326"
       height="725"
@@ -20,23 +27,47 @@
         <path d="M281.785 725H47.1933C22.6803 725 2.74912 705.103 2.74912 680.631V249.29H0V197.603H2.97821V188.912H0V137.224H2.97821V109.322H0V81.1909H2.97821V44.3691C2.97821 19.8975 22.9093 0 47.1933 0H281.785C306.298 0 326.229 19.8975 326.229 44.3691V680.86C326 705.103 306.069 725 281.785 725ZM2.29093 247.003H5.26915V680.86C5.26915 703.959 24.0548 722.942 47.4223 722.942H281.785C304.923 722.942 323.938 704.188 323.938 680.86V44.3691C323.709 21.041 304.923 2.28707 281.785 2.28707H47.1933C24.0548 2.28707 5.26915 21.041 5.26915 44.3691V83.7066H2.29093V107.035H5.26915V139.511H2.29093V186.396H5.26915V199.661H2.29093V247.003Z" fill="#808080" />
       </g>
     </svg>
-    <video class="element-video__video" controls muted width="304" height="658">
+    <video
+      v-if="intersected"
+      :ref="`video-${_uid}`"
+      key="video"
+      class="element-video__video"
+      controls
+      muted
+      width="304"
+      height="658"
+      :poster="`${assetsBasePath}${poster}`"
+      @canplay="setVideoPlayer"
+    >
       <source
         :src="`${assetsBasePath}${source}`"
         type="video/mp4"
       >
       Sorry, your browser doesn't support embedded videos.
     </video>
-    <p class="element-video__description">
-      {{ description }}
+    <p
+      v-else
+      key="preloader"
+      :style="`background: linear-gradient(#5F5F5F, rgb(${preloaderRGB}))`"
+      class="element-video__video element-video__video--loading"
+    >
+      <span>Loading...</span>
     </p>
   </div>
 </template>
 <script>
 export default {
-  name: 'ElementPhoneGifDisplayer',
+  name: 'ElementVideo',
   props: {
+    preloaderRGB: {
+      type: String,
+      default: '0, 0, 0'
+    },
     source: {
+      type: String,
+      required: true
+    },
+    poster: {
       type: String,
       required: true
     },
@@ -48,6 +79,20 @@ export default {
       type: String,
       required: true
     }
+  },
+  data () {
+    return {
+      intersected: false,
+      canplay: false
+    }
+  },
+  methods: {
+    visibilityChanged (status) {
+      this.intersected = status
+    },
+    setVideoPlayer () {
+      this.canplay = true
+    }
   }
 }
 </script>
@@ -55,7 +100,19 @@ export default {
 .element-video {
   margin-right: 20px;
   margin-top: 1rem;
+  margin-bottom: 2rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  &__description {
+    text-align: center;
+    font-size: small;
+    padding: 0.7rem 0;
+    border-top: 1px solid #808080;
+    width: 100%;
+  }
   &__svg {
     position: absolute;
     top: 0;
@@ -64,22 +121,24 @@ export default {
   &__video {
     position: absolute;
     z-index: 10;
-    top: 32px;
-    left: 11px;
+    top: 79px;
     border-radius: 17px;
     transition: 0.5s ease-in-out opacity;
     &:focus {
       outline: none;
     }
-  }
-  &__description {
-    text-align: center;
-    font-size: small;
-    padding: 0.7rem 0;
-    border-bottom: 1px solid #808080;
-    @media(max-width: $phone) {
-      text-align: left;
+    &--loading {
+      font-size: small;
+      width: 304px;
+      height: 658px;
+      padding: 3rem 1rem 1rem;
+      text-align: center;
+      span {
+        animation: pulse 2s infinite;
+        animation-direction: alternate;
+      }
     }
   }
 }
+
 </style>

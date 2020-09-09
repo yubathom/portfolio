@@ -10,7 +10,7 @@
   >
     <h2>Open source</h2>
     <p v-if="!eventsReady" class="section-open-source__preloader">
-      Loading...
+      <span>Loading...</span>
     </p>
     <template v-else>
       <article v-for="({ id, type, created_at, payload, repo }) in events" :key="id">
@@ -91,26 +91,21 @@ export default {
   border-top: 1px solid white;
   margin-bottom: 3rem;
   &__preloader {
-    animation: pulse 1s infinite;
-    animation-direction: alternate;
     min-height: 50vh;
     background: $grey-2;
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient($grey-1, $grey-2);
+    span {
+      background: transparent;
+      animation: pulse 1s infinite;
+      animation-direction: alternate;
+      padding-bottom: 5rem;
+    }
   }
   &__section {
     margin-bottom: 0.25rem;
-  }
-}
-
-@keyframes pulse {
-  0% {
-    color: #a4a4a4;
-  }
-  100% {
-    color: white;
   }
 }
 
