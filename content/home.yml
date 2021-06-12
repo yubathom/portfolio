@@ -1,6 +1,6 @@
 title: Thomas Yuba
 description: I’m an UI developer. A designer who codes simple and unobtrusive interfaces.
-about: Currently working at São Paulo Urbanismo, an urban design office. Previously worked at motebz studio.
+about: Currently working at McKinsey & Company, Previously worked São Paulo Urbanismo and motebz studio.
 projects:
   -
     id: case-horas
@@ -9,7 +9,7 @@ projects:
     year: '2020'
     color: 0,131,117
     description: This application creates objective parameters for pricing urban projects in the city of São Paulo. Inspired by the git API, it works like a commit log for non programmers. The system was entirely written in javascript with nodejs at the backend and vuejs at the frontend.
-    contextUrls: 
+    contextUrls:
       -
         title: Project FAQ (portuguese)
         url: https://servicos.spurbanismo.sp.gov.br/apropriacaohoras/faq/objetivos?from=%2Ffaq
@@ -20,15 +20,15 @@ projects:
         title: Figma file
         url: https://www.figma.com/file/UUEUzpAj0R51RLz2GzC4dW/spurb-apropria%C3%A7%C3%A3o-de-horas?node-id=0%3A1
     videos:
-      - 
+      -
         source: '/horas/registrar-horas.mp4'
         poster: '/horas/registrar-horas.jpg'
         description: Opening the app and create a log
-      - 
+      -
         source: '/horas/equipes.mp4'
         poster: '/horas/equipes.jpg'
         description: Define a project team
-      - 
+      -
         source: '/horas/relatorios.mp4'
         poster: '/horas/relatorios.jpg'
         description: Check the a project report
@@ -60,7 +60,7 @@ projects:
         title: IAB award news (portuguese)
         url: https://gestaourbana.prefeitura.sp.gov.br/noticias/plataforma-participe-vence-premiacao-iabsp-2019/
     videos:
-      - 
+      -
         source: /participe/participe1.mp4
         poster: /participe/participe1.jpg
         description: Open a consultancy and check the related law
@@ -89,11 +89,11 @@ projects:
       height: 616
       description: Presentation
     videos:
-      - 
+      -
         source: /cepac/cepac1.mp4
         poster: /cepac/cepac1.jpg
         description: Finding a CEPAC using the map
-      - 
+      -
         source: /cepac/cepac2.mp4
         poster: /cepac/cepac2.jpg
         description: Finding a CEPAC using the list
@@ -115,7 +115,7 @@ projects:
     color: 255,85,0
     description: Monitoring system and dashboard of public urban projects (Decree nº 56.901, march 2016)
     videos:
-      - 
+      -
         source: '/piu-monitoramento/monitoramento_1.mp4'
         poster: '/piu-monitoramento/monitoramento_1.jpg'
         description: Retrieving data from projects
@@ -137,7 +137,7 @@ projects:
     color: 3,128,250
     description: I contributed to this browser extension that provides to the São Paulo City city hall geographical website, Geosampa, an address search box. To achive this I’ve used the nominatin API with the Open Street Map API. It was a very small contribuition but it helped me to have an idea how extensions are made and it gave me a better understanding of how a browser works.
     desktopGifs:
-      - 
+      -
         width: 1045
         heigth: 708
         source: /mais-livre/geosampa-mais-livre_usage.gif
